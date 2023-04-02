@@ -1,0 +1,18 @@
+/*THIS PART IS FOR THE LINES OF THE HARMBURGER ICON IT TOGGLES IT TO TURN TO X AND BACK*/
+.toggle-menu.close .line {
+    @apply border border-black bg-black h-[2px]  w-4/5 transition-all duration-1000;
+  }
+  .toggle-menu.open .line {
+    @apply border border-white bg-white h-[2px]  w-4/5 transition-all  duration-1000;
+  }
+  .toggle-menu.open .line:first-child {
+    @apply  translate-y-1  -rotate-45;
+  }
+  .toggle-menu.open .line:last-child {
+    @apply -translate-y-1 rotate-45;
+  }
+  
+  /*THIS PART TOGGLES THE MENU TO COME DOWN*/
+  ul.links.close {
+    @apply -top-3/4 ;
+  }
